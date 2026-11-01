@@ -159,7 +159,7 @@ img {
 
 .section {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 64px;
   /* 固定ヘッダーに見出しが隠れないようにする */
   scroll-margin-top: 56px;
 }
@@ -260,13 +260,4 @@ img {
 
 .work-links a:hover {
   text-decoration: underline;
-}
-
-/* Footer */
-
-.site-footer {
-  margin-top: 40px;
-  padding: 24px 0 32px;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
 }
