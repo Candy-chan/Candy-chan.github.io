@@ -111,7 +111,7 @@ img {
   align-items: center;
   gap: 28px;
   padding-top: 72px;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
 }
 
 .hero-avatar {
@@ -166,9 +166,24 @@ img {
   scroll-margin-top: 56px;
 }
 
+/* 作品タイトルと競わないよう、見出しは小さなラベルと区切り線にする */
 .section-title {
-  margin: 0 0 8px;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
 }
 
 /* Works */
@@ -176,6 +191,10 @@ img {
 .work {
   padding: 40px 0;
   border-bottom: 1px solid var(--border);
+}
+
+.work:first-of-type {
+  padding-top: 28px;
 }
 
 .work:last-child {
