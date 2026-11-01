@@ -47,67 +47,67 @@
 
       <!--
         作品の追加方法：下の <article class="work"> をコピーして中身を書き換える。
-        - data-video に YouTube の動画ID（URLの v= の後ろ）を入れると、クリックで動画を再生する
-        - 他の人の動画を使う場合は data-video-credit に出典を書く
-        - .work-gallery 内の画像は、クリック後の詳細表示にスクショとして並ぶ
-        - サムネイル画像がない間は is-placeholder を付けておく
+        - 動画は YouTube の埋め込みURL（https://www.youtube-nocookie.com/embed/動画ID）を iframe に入れる
+        - 他の人の動画を使う場合は figcaption に出典を書く
+        - 動画がない間は .work-video に is-placeholder を付けておく
       -->
-      <div class="works-grid">
-        <article class="work" data-video="pBfiwwupow0" data-video-credit="紹介動画：ヤタノちゃんねる">
-          <!-- TODO: 自前のスクショに差し替える -->
-          <button class="work-media" type="button" aria-label="GIGASの詳細を見る">
-            <img src="https://i.ytimg.com/vi/pBfiwwupow0/hqdefault.jpg" alt="GIGASのワールド紹介動画のサムネイル" loading="lazy">
-          </button>
-          <div class="work-body">
-            <p class="work-meta">2025 · VRChat ワールド</p>
-            <h3 class="work-title">GIGAS</h3>
-            <p class="work-desc">1人の巨人と最大30人の人間が戦う、非対称対戦型のゲームワールド。公開時の紹介動画はXで40万回以上再生され、ホロライブのVRChatイベント「ビーチで対決！ホロナツクイーン決定戦 in VRChat」で遊ばれるゲームにも採用されました。</p>
-            <ul class="tags">
-              <li>ゲームワールド</li>
-              <li>非対称対戦</li>
-              <li>Quest対応</li>
-            </ul>
-            <ul class="work-links">
-              <li><a href="https://vrchat.com/home/world/wrld_69c41e95-1539-426a-a321-34412e0b021e/info" target="_blank" rel="noopener">ワールド</a></li>
-              <li><a href="https://x.com/candy_k_banana/status/1930925111265096020" target="_blank" rel="noopener">公開時の動画</a></li>
-              <li><a href="https://metacul-frontier.com/?p=25264" target="_blank" rel="noopener">紹介記事（メタカル最前線）</a></li>
-              <li><a href="https://v-inc.jp/works/article/hololive" target="_blank" rel="noopener">ホロライブとのコラボ（株式会社V）</a></li>
-            </ul>
-          </div>
-          <div class="work-gallery" hidden></div>
-        </article>
+      <article class="work">
+        <header class="work-header">
+          <p class="work-meta">2025 · VRChat ワールド</p>
+          <h3 class="work-title">GIGAS</h3>
+        </header>
+        <figure class="work-video">
+          <iframe src="https://www.youtube-nocookie.com/embed/pBfiwwupow0" title="GIGASの紹介動画" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+          <figcaption>紹介動画：ヤタノちゃんねる</figcaption>
+        </figure>
+        <div class="work-content">
+          <p>1人の巨人と最大30人の人間が戦う、非対称対戦型のゲームワールド。公開時の紹介動画はXで40万回以上再生され、ホロライブのVRChatイベント「ビーチで対決！ホロナツクイーン決定戦 in VRChat」で遊ばれるゲームにも採用されました。</p>
+          <ul class="tags">
+            <li>ゲームワールド</li>
+            <li>非対称対戦</li>
+            <li>Quest対応</li>
+          </ul>
+          <ul class="work-links">
+            <li><a href="https://vrchat.com/home/world/wrld_69c41e95-1539-426a-a321-34412e0b021e/info" target="_blank" rel="noopener">ワールド</a></li>
+            <li><a href="https://x.com/candy_k_banana/status/1930925111265096020" target="_blank" rel="noopener">公開時の動画</a></li>
+            <li><a href="https://metacul-frontier.com/?p=25264" target="_blank" rel="noopener">紹介記事（メタカル最前線）</a></li>
+            <li><a href="https://v-inc.jp/works/article/hololive" target="_blank" rel="noopener">ホロライブとのコラボ（株式会社V）</a></li>
+          </ul>
+        </div>
+      </article>
 
-        <article class="work" data-video="">
-          <button class="work-media is-placeholder" type="button" aria-label="作品2の詳細を見る">
-            <span>Screenshot</span>
-          </button>
-          <div class="work-body">
-            <p class="work-meta">2024 · Vket</p>
-            <h3 class="work-title">Vketの制作物（見本）</h3>
-            <p class="work-desc">担当したコンテンツの説明。クライアントやイベント名、担当範囲を書きます。</p>
-            <ul class="tags">
-              <li>Vket</li>
-              <li>ギミック制作</li>
-            </ul>
-          </div>
-          <div class="work-gallery" hidden></div>
-        </article>
+      <article class="work">
+        <header class="work-header">
+          <p class="work-meta">2024 · Vket</p>
+          <h3 class="work-title">Vketの制作物（見本）</h3>
+        </header>
+        <figure class="work-video is-placeholder">
+          <span>Video</span>
+        </figure>
+        <div class="work-content">
+          <p>担当したコンテンツの説明。クライアントやイベント名、担当範囲を書きます。</p>
+          <ul class="tags">
+            <li>Vket</li>
+            <li>ギミック制作</li>
+          </ul>
+        </div>
+      </article>
 
-        <article class="work" data-video="">
-          <button class="work-media is-placeholder" type="button" aria-label="作品3の詳細を見る">
-            <span>Screenshot</span>
-          </button>
-          <div class="work-body">
-            <p class="work-meta">2023 · VRChat</p>
-            <h3 class="work-title">作品タイトル（見本）</h3>
-            <p class="work-desc">作品の短い説明。どんな体験か、担当した範囲などを1〜2文で書きます。</p>
-            <ul class="tags">
-              <li>ゲームワールド</li>
-            </ul>
-          </div>
-          <div class="work-gallery" hidden></div>
-        </article>
-      </div>
+      <article class="work">
+        <header class="work-header">
+          <p class="work-meta">2023 · VRChat</p>
+          <h3 class="work-title">作品タイトル（見本）</h3>
+        </header>
+        <figure class="work-video is-placeholder">
+          <span>Video</span>
+        </figure>
+        <div class="work-content">
+          <p>作品の短い説明。どんな体験か、担当した範囲などを書きます。</p>
+          <ul class="tags">
+            <li>ゲームワールド</li>
+          </ul>
+        </div>
+      </article>
     </section>
 
     <section id="about" class="section container">
@@ -127,12 +127,5 @@
       <small>&copy; キャンディちゃん</small>
     </div>
   </footer>
-
-  <dialog class="viewer" aria-label="作品の詳細">
-    <button class="viewer-close" type="button" aria-label="閉じる">&times;</button>
-    <div class="viewer-content"></div>
-  </dialog>
-
-  <script src="main.js"></script>
 </body>
 </html>
