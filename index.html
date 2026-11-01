@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>キャンディちゃん | Portfolio</title>
+  <meta name="description" content="キャンディちゃんが制作したゲームワールドやVketのコンテンツを紹介するポートフォリオです。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="キャンディちゃん | Portfolio">
+  <meta property="og:description" content="キャンディちゃんが制作したゲームワールドやVketのコンテンツを紹介するポートフォリオです。">
+  <meta property="og:url" content="https://candy-chan.github.io/">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">キャンディちゃん</a>
+      <nav class="nav">
+        <a href="#works">Works</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="hero-label">Portfolio</p>
+      <h1>キャンディちゃん</h1>
+      <!-- TODO: 自己紹介の一文を入れる -->
+      <p class="hero-lead">ゲームワールドやVketのコンテンツを制作しています。</p>
+    </section>
+
+    <section id="works" class="section container">
+      <h2 class="section-title">Works</h2>
+
+      <!--
+        作品の追加方法：下の <article class="work"> をコピーして中身を書き換える。
+        - data-video に YouTube の動画ID（URLの v= の後ろ）を入れると、クリックで動画を再生する
+        - .work-gallery 内の画像は、クリック後の詳細表示にスクショとして並ぶ
+        - サムネイル画像がない間は is-placeholder を付けておく
+      -->
+      <div class="works-grid">
+        <article class="work" data-video="">
+          <button class="work-media is-placeholder" type="button" aria-label="作品1の詳細を見る">
+            <span>Screenshot</span>
+          </button>
+          <div class="work-body">
+            <p class="work-meta">2025 · VRChat</p>
+            <h3 class="work-title">作品タイトル（見本）</h3>
+            <p class="work-desc">作品の短い説明。どんな体験か、担当した範囲などを1〜2文で書きます。</p>
+            <ul class="tags">
+              <li>ゲームワールド</li>
+              <li>企画・実装</li>
+            </ul>
+          </div>
+          <div class="work-gallery" hidden></div>
+        </article>
+
+        <article class="work" data-video="">
+          <button class="work-media is-placeholder" type="button" aria-label="作品2の詳細を見る">
+            <span>Screenshot</span>
+          </button>
+          <div class="work-body">
+            <p class="work-meta">2024 · Vket</p>
+            <h3 class="work-title">Vketの制作物（見本）</h3>
+            <p class="work-desc">担当したコンテンツの説明。クライアントやイベント名、担当範囲を書きます。</p>
+            <ul class="tags">
+              <li>Vket</li>
+              <li>ギミック制作</li>
+            </ul>
+          </div>
+          <div class="work-gallery" hidden></div>
+        </article>
+
+        <article class="work" data-video="">
+          <button class="work-media is-placeholder" type="button" aria-label="作品3の詳細を見る">
+            <span>Screenshot</span>
+          </button>
+          <div class="work-body">
+            <p class="work-meta">2023 · VRChat</p>
+            <h3 class="work-title">作品タイトル（見本）</h3>
+            <p class="work-desc">作品の短い説明。どんな体験か、担当した範囲などを1〜2文で書きます。</p>
+            <ul class="tags">
+              <li>ゲームワールド</li>
+            </ul>
+          </div>
+          <div class="work-gallery" hidden></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title">About</h2>
+      <div class="about">
+        <!-- TODO: プロフィールを入れる -->
+        <p>プロフィール文をここに書きます。得意な分野、使っているツール、お仕事の受付状況など。</p>
+        <ul class="links">
+          <!-- TODO: TwitterのIDを入れる -->
+          <li><a href="https://x.com/" target="_blank" rel="noopener">X (Twitter)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; キャンディちゃん</small>
+    </div>
+  </footer>
+
+  <dialog class="viewer" aria-label="作品の詳細">
+    <button class="viewer-close" type="button" aria-label="閉じる">&times;</button>
+    <div class="viewer-content"></div>
+  </dialog>
+
+  <script src="main.js"></script>
+</body>
+</html>
