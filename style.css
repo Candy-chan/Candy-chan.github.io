@@ -237,6 +237,30 @@ img {
   font-size: 0.8rem;
 }
 
+.work-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.work-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.work-links a::after {
+  content: " ↗";
+  font-size: 0.8em;
+}
+
+.work-links a:hover {
+  text-decoration: underline;
+}
+
 /* About */
 
 .about {
@@ -331,6 +355,12 @@ img {
   aspect-ratio: 16 / 9;
   border: 0;
   border-radius: 8px;
+}
+
+.viewer-content .viewer-credit {
+  margin-top: -4px;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .viewer-content img {

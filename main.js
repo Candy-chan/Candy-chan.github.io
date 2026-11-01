@@ -21,6 +21,13 @@ function openViewer(work) {
     iframe.allow = "autoplay; encrypted-media; picture-in-picture";
     iframe.allowFullscreen = true;
     viewerContent.append(iframe);
+
+    if (work.dataset.videoCredit) {
+      const credit = document.createElement("p");
+      credit.className = "viewer-credit";
+      credit.textContent = work.dataset.videoCredit;
+      viewerContent.append(credit);
+    }
   }
 
   const title = document.createElement("h3");
@@ -28,6 +35,11 @@ function openViewer(work) {
   const desc = document.createElement("p");
   desc.textContent = work.querySelector(".work-desc").textContent;
   viewerContent.append(title, desc);
+
+  const links = work.querySelector(".work-links");
+  if (links) {
+    viewerContent.append(links.cloneNode(true));
+  }
 
   work.querySelectorAll(".work-gallery img").forEach((img) => {
     viewerContent.append(img.cloneNode());
