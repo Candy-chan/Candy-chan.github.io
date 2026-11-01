@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>キャンディちゃん | Portfolio</title>
-  <meta name="description" content="キャンディちゃんが制作したゲームワールドやVketのコンテンツを紹介するポートフォリオです。">
+  <meta name="description" content="VRChatでゲームワールドを制作するキャンディちゃんのポートフォリオ。GIGAS、BOMBERio、ペコペコバトル、Vketでの制作物を紹介しています。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="キャンディちゃん | Portfolio">
-  <meta property="og:description" content="キャンディちゃんが制作したゲームワールドやVketのコンテンツを紹介するポートフォリオです。">
+  <meta property="og:description" content="VRChatでゲームワールドを制作するキャンディちゃんのポートフォリオ。GIGAS、BOMBERio、ペコペコバトル、Vketでの制作物を紹介しています。">
   <meta property="og:url" content="https://candy-chan.github.io/">
   <meta property="og:image" content="https://candy-chan.github.io/images/icon.jpg">
   <meta name="twitter:card" content="summary">
@@ -15,7 +15,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <!-- style.css を変えたら v= の日付を更新し、古い見た目がブラウザに残らないようにする -->
+  <link rel="stylesheet" href="style.css?v=20261101">
 </head>
 <body>
   <header class="site-header">
@@ -37,8 +38,7 @@
       <div>
         <p class="hero-label">Portfolio</p>
         <h1>キャンディちゃん</h1>
-        <!-- TODO: 自己紹介の一文を入れる -->
-        <p class="hero-lead">ゲームワールドやVketのコンテンツを制作しています。</p>
+        <p class="hero-lead">VRChatで、みんなで遊べるゲームワールドを作っています。</p>
       </div>
     </section>
 
@@ -47,9 +47,9 @@
 
       <!--
         作品の追加方法：下の <article class="work"> をコピーして中身を書き換える。
+        - 並び順は年ではなく、今も更新している作品を上に置く
         - 動画は YouTube の埋め込みURL（https://www.youtube-nocookie.com/embed/動画ID）を iframe に入れる
         - 他の人の動画を使う場合は figcaption に出典を書く
-        - 動画がない間は .work-video に is-placeholder を付けておく
       -->
       <article class="work">
         <header class="work-header">
@@ -172,46 +172,13 @@
           </ul>
         </div>
       </article>
-
-      <article class="work">
-        <header class="work-header">
-          <p class="work-meta">2024 · Vket</p>
-          <h3 class="work-title">Vketの制作物（見本）</h3>
-        </header>
-        <figure class="work-video is-placeholder">
-          <span>Video</span>
-        </figure>
-        <div class="work-content">
-          <p>担当したコンテンツの説明。クライアントやイベント名、担当範囲を書きます。</p>
-          <ul class="tags">
-            <li>Vket</li>
-            <li>ギミック制作</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="work">
-        <header class="work-header">
-          <p class="work-meta">2023 · VRChat</p>
-          <h3 class="work-title">作品タイトル（見本）</h3>
-        </header>
-        <figure class="work-video is-placeholder">
-          <span>Video</span>
-        </figure>
-        <div class="work-content">
-          <p>作品の短い説明。どんな体験か、担当した範囲などを書きます。</p>
-          <ul class="tags">
-            <li>ゲームワールド</li>
-          </ul>
-        </div>
-      </article>
     </section>
 
     <section id="about" class="section container">
       <h2 class="section-title">About</h2>
       <div class="about">
-        <!-- TODO: プロフィールを入れる -->
-        <p>プロフィール文をここに書きます。得意な分野、使っているツール、お仕事の受付状況など。</p>
+        <p>2019年からVRChatでゲームワールドを制作しています。代表作は、訪問数300万回を超える非対称対戦ゲーム『GIGAS』や、120万回を超える『BOMBERio』です。</p>
+        <p>バーチャルマーケット（Vket）では、会場ワールドのゲームや、リアル会場とVRChatをつなぐイベントコンテンツの企画・実装も手がけています。</p>
         <ul class="links">
           <li><a href="https://x.com/candy_k_banana" target="_blank" rel="noopener">X (Twitter)</a></li>
         </ul>

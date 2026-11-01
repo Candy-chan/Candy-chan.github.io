@@ -5,7 +5,6 @@
   --muted: #6e6e7c;
   --border: #e5e5ec;
   --accent: #e0558c;
-  --placeholder: linear-gradient(135deg, #f3e7ee, #e7ecf6);
   --radius: 12px;
 }
 
@@ -17,7 +16,6 @@
     --muted: #a0a0ae;
     --border: #2e2e39;
     --accent: #f27aa9;
-    --placeholder: linear-gradient(135deg, #2e2430, #232838);
   }
 }
 
@@ -232,16 +230,6 @@ img {
   font-size: 0.85rem;
 }
 
-.work-video.is-placeholder {
-  display: grid;
-  place-items: center;
-  aspect-ratio: 16 / 9;
-  border-radius: var(--radius);
-  background: var(--placeholder);
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
 .work-content p {
   margin: 0 0 16px;
 }
@@ -290,7 +278,11 @@ img {
 /* About */
 
 .about p {
-  margin-top: 16px;
+  margin: 16px 0;
+}
+
+.about .links {
+  margin-top: 24px;
 }
 
 .links {
